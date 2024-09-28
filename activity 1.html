@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validation</title>
+</head>
+<body>
+    <h2>form validation</h2>
+    <form name="myform" onsubmit="validationform()">
+        <input type="text" name="fname" placeholder="name"><br><br>
+        <button type="submit"  value="submit">submit</button>
+    </form>
+<script>
+    function validationform(){       
+        name=document.forms["myform"]["fname"].value;
+        if (name==' ' ){
+            alert("please enter name");
+            return false;
+        }
+    }
+</script>
+    
+</body>
+</html>
